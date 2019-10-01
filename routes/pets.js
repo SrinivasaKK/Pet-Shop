@@ -10,9 +10,8 @@ let file = 'pets.json';
 petsRouter.get('/', (req,res) => {
   _helper.isFilePresent(file).then( success => {
     _helper.read(file).then( data => {
-      
       let parsedData = _helper.stringToJson(data);
-      res.status(200).send(parsedData);
+      res.status(200).send(parsedData.pets);
     }).catch( err => {
       res.status(500).send("{'msg':'No pets available'}")
     }
@@ -56,7 +55,29 @@ petsRouter.post('/', (req,res) => {
   }
 })
      
+petsRouter.put('/',(req,res) => {
+  let petData = req.body;
+  if(petData.name && petData.color && petData.age && petData.breed && petData.type){
+        _helper.read(file).then( response => {
+          pet = _helper.stringToJson(response);
+          pet.pets.map(updatingPet => {
+            if(updatingPet.id === petData.id){
+              updatingPet.name = petData.name;
+              updatingPet.age = petData.age;
+              updatingPet.color = petData.color;
+              updatingPet.type = petData.type;
+              updatingPet.breed = petData.breed;
+            }
+          })
+          writeDataToFile(res,file,_helper.jsonToString(pet))
+        }).catch( err => {
+                     console.log(err)
+        })
 
+  }else {
+    res.status(422).send("{'msg':'missing required paramaters'}")
+  }
+})
 
 function writeDataToFile(res,file,data) {
   _helper.write(file,data).then( success => {

@@ -71,7 +71,7 @@ petsRouter.put('/',(req,res) => {
           })
           writeDataToFile(res,file,_helper.jsonToString(pet))
         }).catch( err => {
-                     console.log(err)
+          res.status(500).send("{'msg':'unable to update file'}")
         })
 
   }else {

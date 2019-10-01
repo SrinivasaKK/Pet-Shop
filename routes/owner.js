@@ -1,17 +1,12 @@
 const express = require('express');
 const ownerRouter = express.Router();
+const ownerData = require('./../data/owners.json')
 const _helper = require('./../lib/helpers')
 
+let file = 'pets.json'
 ownerRouter.get('/', (req,res)=> {
-     _helper.list((err,data) => {
-       if(!err){
-        res.send(data)
-       }
-       else{
-         res.send(err)
-       }
-      
-     })
+   
+  res.status(200).send(ownerData);
      
 });
 

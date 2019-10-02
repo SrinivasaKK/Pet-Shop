@@ -1,21 +1,30 @@
-[{
-  "id":"1",
-  "name":"Owner-1",
-  "address":"KL downtown",
-  "phone":"1111111111",
-  "email":"abc@xyz.com"
-},
-{
-  "id":"2",
-  "name":"Owner-2",
-  "address":"KL downtown",
-  "phone":"1111111111",
-  "email":"abc@xyz.com"
-},
-{
-  "id":"2",
-  "name":"Owner-3",
-  "address":"KL downtown",
-  "phone":"1111111111",
-  "email":"abc@xyz.com"
-}]
+[
+  {
+    "id": "1",
+    "name": "Owner-1",
+    "address": "KL downtown",
+    "phone": "1111111111",
+    "email": "abc@xyz.com"
+  },
+  {
+    "id": "2",
+    "name": "Owner-2",
+    "address": "KL downtown",
+    "phone": "1111111111",
+    "email": "abc@xyz.com"
+  },
+  {
+    "id": "3",
+    "name": "Owner-3",
+    "address": "KL downtown",
+    "phone": "1111111111",
+    "email": "abc@xyz.com"
+  },
+  {
+    "id": "4",
+    "name": "Owner-3",
+    "address": "KL downtown",
+    "phone": "1111111111",
+    "email": "abc@xyz.com"
+  }
+]

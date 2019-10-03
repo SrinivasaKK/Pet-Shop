@@ -47,7 +47,8 @@ petsRouter.post("/", (req, res) => {
     petData.color &&
     petData.age &&
     petData.breed &&
-    petData.type
+    petData.type &&
+    petData.ownedBy
   ) {
     // create unique ID to identify each pet
     let id = _helper.createRandomnID();
@@ -58,7 +59,7 @@ petsRouter.post("/", (req, res) => {
       breed: petData.breed,
       age: petData.age,
       type: petData.type,
-      ownedBy: "1"
+      ownedBy: petData.ownedBy
     };
     _helper
       .isFilePresent(file)
@@ -101,7 +102,7 @@ petsRouter.put("/", (req, res) => {
     petData.color &&
     petData.age &&
     petData.breed &&
-    petData.type
+    petData.type && petData.ownedBy
   ) {
     _helper
       .read(file)

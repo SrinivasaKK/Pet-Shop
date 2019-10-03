@@ -23,13 +23,13 @@ ownerRouter.get("/:id", (req, res) => {
       _helper
         .read(file)
         .then(response => {
-          let parsedData = _helper.stringToJson(response);
-          let ownerPets = parsedData.pets.filter(ownerPet => {
-            if (ownerPet.ownedBy === id) {
-              return ownerPet;
-            }
-          });
-          if (ownerPets.length > 0) {
+          if (response) {
+            let parsedData = _helper.stringToJson(response);
+            let ownerPets = parsedData.pets.filter(ownerPet => {
+              if (ownerPet.ownedBy === id) {
+                return ownerPet;
+              }
+            });
             res.status(200).send(ownerPets);
           } else {
             res.status(202).send("{'msg':'Don't own any pets}");

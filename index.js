@@ -41,10 +41,10 @@ const petsRoute = require("./routes/pets");
 app.use("/owner", ownerRoute);
 app.use("/pets", petsRoute);
 app.use(morgan("dev"));
-app.use(express.static(path.join(__dirname, "../dist")));
+app.use(express.static(path.join(__dirname, "/dist")));
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../dist/index.html"));
+  res.sendFile(path.join(__dirname, "/dist/index.html"));
 });
 const server = http.createServer(app);
 

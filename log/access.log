@@ -13,3 +13,4 @@ GET /owner/2 304 0.861 ms - {} - - http://localhost:4200/owner/2 Mozilla/5.0 (Wi
 OPTIONS /pets/99i8nfhgjo08 204 0.610 ms 0 {} - 0 http://localhost:4200/owner/2 Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
 PUT /pets/99i8nfhgjo08 200 33.775 ms 17 {"name":"Ab","type":"cat","breed":"lab","color":"brown","age":2,"ownedBy":"2"} 78 17 http://localhost:4200/owner/2 Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
 GET /owner 304 14.751 ms - {} - - http://localhost:4200/ Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET /owner 304 2.455 ms - {} - - http://localhost:4200/ Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36

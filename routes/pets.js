@@ -23,7 +23,7 @@ petsRouter.get("/", (req, res) => {
           res.status(200).send(parsedData.pets);
         })
         .catch(err => {
-          res.status(500).send("{'msg':'No pets available'}");
+          res.status(500).send({ msg: "No pets available" });
         });
     })
     .catch(err => {
@@ -83,7 +83,7 @@ petsRouter.post("/", (req, res) => {
   }
   // if any of the fields are missing
   else {
-    res.status(422).send("{'msg':'missing required fields'}");
+    res.status(422).send({ msg: "missing required fields" });
   }
 });
 
@@ -94,7 +94,8 @@ petsRouter.post("/", (req, res) => {
 3. If file is not present, send an error response back 
 
 */
-petsRouter.put("/", (req, res) => {
+petsRouter.put("/:id", (req, res) => {
+  let id = req.params.id;
   let petData = req.body;
   //check if all fields are present
   if (
@@ -102,14 +103,15 @@ petsRouter.put("/", (req, res) => {
     petData.color &&
     petData.age &&
     petData.breed &&
-    petData.type && petData.ownedBy
+    petData.type &&
+    petData.ownedBy
   ) {
     _helper
       .read(file)
       .then(response => {
         pet = _helper.stringToJson(response);
         pet.pets.map(updatingPet => {
-          if (updatingPet.id === petData.id) {
+          if (updatingPet.id === id) {
             updatingPet.name = petData.name;
             updatingPet.age = petData.age;
             updatingPet.color = petData.color;
@@ -120,11 +122,11 @@ petsRouter.put("/", (req, res) => {
         writeDataToFile(res, file, _helper.jsonToString(pet));
       })
       .catch(err => {
-        res.status(500).send("{'msg':'unable to update'}");
+        res.status(500).send({ msg: "unable to update" });
       });
   } // if any of the fields are missing
   else {
-    res.status(422).send("{'msg':'missing required fields'}");
+    res.status(422).send({ msg: "missing required fields" });
   }
 });
 
@@ -132,11 +134,11 @@ function writeDataToFile(res, file, data) {
   _helper
     .write(file, data)
     .then(success => {
-      res.status(200).send("{'msg':'success'}");
+      res.status(200).send({ msg: "success" });
     })
     .catch(err => {
       console.log(err);
-      res.status(500).send("{'msg':'failed'}");
+      res.status(500).send({ msg: "failed" });
     });
 }
 module.exports = petsRouter;

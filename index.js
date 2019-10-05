@@ -12,17 +12,28 @@ const rfs = require("rotating-file-stream");
 const logDirectory = path.join(__dirname, "/log");
 
 // ensure log directory exists
-fs.existsSync(logDirectory) || fs.mkdirSync(logDirectory);
+if (!fs.existsSync(logDirectory)) {
+  fs.mkdirSync(logDirectory);
+}
 
 // create a rotating write stream
-var accessLogStream = rfs("access.log", {
+const accessLogStream = rfs("access.log", {
   interval: "1d", // rotate daily
   path: logDirectory
 });
 
 // setup the logger
-app.use(morgan("combined", { stream: accessLogStream }));
+morgan.token("body", function(req, res) {
+  return JSON.stringify(req.body);
+});
 
+app.use(
+  morgan(
+    ":method :url :status :response-time ms :res[content-length] :body :req[content-length] :res[content-length] :referrer :user-agent",
+
+    { stream: accessLogStream }
+  )
+);
 //body-parser
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -56,3 +67,5 @@ server.listen(port, err => {
     console.log(`Server started and listening on port ${port}`);
   }
 });
+
+module.exports = app;

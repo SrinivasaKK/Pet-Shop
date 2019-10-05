@@ -3,11 +3,25 @@ const ownerRouter = express.Router();
 const ownerData = require("./../data/owners.json");
 const _helper = require("./../lib/helpers");
 
-let file = "pets.json";
-
+let petfile = "pets.json";
+let ownerFile = "owners.json";
 // read data from owners file
 ownerRouter.get("/", (req, res) => {
-  res.status(200).send(ownerData);
+  _helper
+    .isFilePresent(ownerFile)
+    .then(success => {
+      _helper
+        .read(ownerFile)
+        .then(data => {
+          res.status(200).send(data);
+        })
+        .catch(err => {
+          res.status(500).send({ msg: "No owner available" });
+        });
+    })
+    .catch(err => {
+      res.status(500).send(err);
+    });
 });
 
 /*
@@ -18,10 +32,10 @@ ownerRouter.get("/", (req, res) => {
 ownerRouter.get("/:id", (req, res) => {
   let id = req.params.id;
   _helper
-    .isFilePresent(file)
+    .isFilePresent(petfile)
     .then(success => {
       _helper
-        .read(file)
+        .read(petfile)
         .then(response => {
           if (response) {
             let parsedData = _helper.stringToJson(response);

@@ -46,15 +46,15 @@ ownerRouter.get("/:id", (req, res) => {
             });
             res.status(200).send(ownerPets);
           } else {
-            res.status(202).send("{'msg':'Don't own any pets}");
+            res.status(202).send({ msg: "Don't own any pets" });
           }
         })
         .catch(err => {
-          res.status(500).send("{'msg':'Don't own any pets}");
+          res.status(500).send({ msg: "Don't own any pets" });
         });
     })
     .catch(err => {
-      res.status(500).send("{'msg':'Don't own any pets}");
+      res.status(500).send({ msg: "Don't own any pets" });
     });
 });
 module.exports = ownerRouter;

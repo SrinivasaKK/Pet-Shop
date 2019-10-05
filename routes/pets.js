@@ -48,6 +48,8 @@ petsRouter.post("/", (req, res) => {
     petData.age &&
     petData.breed &&
     petData.type &&
+    (petData.type.toLowerCase() == "dog" ||
+      petData.type.toLowerCase() == "cat") &&
     petData.ownedBy
   ) {
     // create unique ID to identify each pet
@@ -104,22 +106,30 @@ petsRouter.put("/:id", (req, res) => {
     petData.age &&
     petData.breed &&
     petData.type &&
+    (petData.type.toLowerCase() == "dog" ||
+      petData.type.toLowerCase() == "cat") &&
     petData.ownedBy
   ) {
     _helper
       .read(file)
       .then(response => {
         pet = _helper.stringToJson(response);
-        pet.pets.map(updatingPet => {
+        const updated = pet.pets.map(updatingPet => {
           if (updatingPet.id === id) {
             updatingPet.name = petData.name;
             updatingPet.age = petData.age;
             updatingPet.color = petData.color;
             updatingPet.type = petData.type;
             updatingPet.breed = petData.breed;
+            return true;
+          } else {
+            return false;
           }
         });
-        writeDataToFile(res, file, _helper.jsonToString(pet));
+        // write the updated data to the file only if the pet with send id is present
+        updated[0] == true
+          ? writeDataToFile(res, file, _helper.jsonToString(pet))
+          : res.status(422).send({ msg: "Pet with the ID is not present" });
       })
       .catch(err => {
         res.status(500).send({ msg: "unable to update" });

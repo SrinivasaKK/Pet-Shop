@@ -54,6 +54,7 @@ app.use("/pets", petsRoute);
 app.use(morgan("dev"));
 app.use(express.static(path.join(__dirname, "/dist")));
 
+// dist is the output of the front end angular application
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "/dist/index.html"));
 });

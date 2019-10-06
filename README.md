@@ -8,6 +8,7 @@
 - npm install
 - pm2 start index.js
 - Server runs on PORT provided by env variable if present or 443
+- launch the application in browser (if used with custom ip - then 'http://custom-ip:port' else http://localhost:port)
 
 ## Running unit tests
 
@@ -85,7 +86,7 @@
 - not-important directory
 
   - It is not common practice to include .env file when the project is pushed to git.
-    Since this is an assignment, to demonstrate my approach, I have included adirectory called not-important which has
+    Since this is an assignment, to demonstrate my approach, I have included this directory which has
 
     - Logs directory which has some logs of my previous testing.
     - .env

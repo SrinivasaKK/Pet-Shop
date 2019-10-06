@@ -20,6 +20,13 @@
 - Used JSHint liting tool for linting the application.
 - jshint --verbose fileName.js
 
+## Logging
+
+- Used Morgan to create logs.
+- log directory is created when the server is started for the first time.
+- each request is logged.
+- logs are rotated on a daily basis.
+
 ## Paths
 
 - GET “/owner” lists all the owners. (Reading from json file (owners.json) - already present in server)
@@ -58,9 +65,20 @@
 
 ## Project Structure and approach
 
-- #dist# directory
-  - This directory has the files generated after compiling the fron end angular application created for this project. I have not inclued the complete angular application here.
+- index.js is the entry point of the application
+- config.js file has required configurations
+- dist directory
+  - This directory has the files generated after compiling the fron end angular application created for this project. I have not inclued the complete angular application here -
   - The angular application can be found in the link -
-- #data# directory
+- data directory
   - has owner.json file which holds all the details about owners
   - once user post the pet data, pets.json file is created in the directory
+- lib directory
+  - has helpers.js file. It includes all common functions used across the application
+- log directory
+  - each request is logged
+  - logs are rotated on a daily basis
+- routes directory
+  - has owner and pets route
+- test directory
+  - has test.js file. used for unit testing of the application.

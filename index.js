@@ -68,4 +68,4 @@ server.listen(port, err => {
   }
 });
 
-module.exports = app;
+module.exports = app; // to run unit testing

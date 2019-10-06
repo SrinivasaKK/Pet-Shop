@@ -3,5 +3,5 @@ dotenv.config();
 
 //export values saved in .env file
 module.exports = {
-  port: process.env.PORT || "443"
+  port: process.env.PORT || "5000"
 };

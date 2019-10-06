@@ -53,7 +53,10 @@ describe("Pets", () => {
   });
 });
 
-/* POST the data to test positive test case of get /pets */
+/* POST the data to test positive test case of get /pets 
+
+*owner id starts from 1 in owner.json file. Here I have used 0 as owner id so that it does not interfere with Front end application
+*/
 //POST route of pets
 
 describe("/POST pets", () => {
@@ -64,7 +67,7 @@ describe("/POST pets", () => {
       breed: "lab",
       age: "12",
       type: "dog",
-      ownedBy: "1"
+      ownedBy: "0"
     };
     chai
       .request(app)
@@ -86,7 +89,7 @@ describe("/POST pets", () => {
       breed: "lab",
       age: "12",
       type: "dog",
-      ownedBy: "1"
+      ownedBy: "0"
     };
 
     chai

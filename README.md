@@ -7,7 +7,7 @@
 - cd Ad-Form-assignment
 - npm install
 - pm2 start index.js
-- Server runs on PORT provided by env variable if present or 443
+- Server runs on PORT provided by env variable if present or 4000
 - launch the application in browser (if used with custom ip - then 'http://custom-ip:port' else http://localhost:port)
 
 ## Running unit tests

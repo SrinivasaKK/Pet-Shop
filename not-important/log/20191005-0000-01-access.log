@@ -1,0 +1,102 @@
+GET /owner 304 14.957 ms - - - {} - - - http://localhost:4200/ Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET /owner 304 14.917 ms - - {} - - - http://localhost:4200/ Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET /owner 304 14.398 ms - {} - - http://localhost:4200/ Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET /owner/2 304 5.744 ms - {} - - http://localhost:4200/owner/2 Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET /owner 304 1.097 ms - {} - - http://localhost:4200/ Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET /owner/3 200 1.452 ms 2 {} - 2 http://localhost:4200/owner/3 Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET /owner 304 1.011 ms - {} - - http://localhost:4200/ Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET /owner/4 304 0.885 ms - {} - - http://localhost:4200/owner/4 Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET /owner 304 2.008 ms - {} - - http://localhost:4200/ Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET /owner/1 304 0.947 ms - {} - - http://localhost:4200/owner/1 Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET /owner 304 0.867 ms - {} - - http://localhost:4200/ Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET /owner/2 304 0.861 ms - {} - - http://localhost:4200/owner/2 Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+OPTIONS /pets/99i8nfhgjo08 204 0.610 ms 0 {} - 0 http://localhost:4200/owner/2 Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+PUT /pets/99i8nfhgjo08 200 33.775 ms 17 {"name":"Ab","type":"cat","breed":"lab","color":"brown","age":2,"ownedBy":"2"} 78 17 http://localhost:4200/owner/2 Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET /owner 304 14.751 ms - {} - - http://localhost:4200/ Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET /owner 304 2.455 ms - {} - - http://localhost:4200/ Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET /owner 200 9.658 ms 557 {} - 557 - node-superagent/3.8.3
+GET /owner 200 13.572 ms 557 {} - 557 - node-superagent/3.8.3
+GET /owners 404 5.498 ms 145 {} - 145 - node-superagent/3.8.3
+GET /owner 200 12.063 ms 557 {} - 557 - node-superagent/3.8.3
+GET /owner 200 15.689 ms 557 {} - 557 - node-superagent/3.8.3
+GET /owner 200 13.468 ms 557 {} - 557 - node-superagent/3.8.3
+GET /owner 200 11.071 ms 557 {} - 557 - node-superagent/3.8.3
+GET /owner 200 9.241 ms 557 {} - 557 - node-superagent/3.8.3
+GET /owner 200 9.637 ms 557 {} - 557 - node-superagent/3.8.3
+GET /owner 200 33.569 ms 557 {"id":"7im9m921kpk6","name":"abcd","age":"1","breed":"abcd","type":"cat","color":"aa"} 86 557 - PostmanRuntime/7.17.1
+GET /owner 200 13.317 ms 557 {} - 557 - node-superagent/3.8.3
+GET /owner 200 9.289 ms 557 {} - 557 - node-superagent/3.8.3
+GET /owner 200 14.763 ms 557 {} - 557 - node-superagent/3.8.3
+GET /owner 200 15.491 ms 557 {} - 557 - node-superagent/3.8.3
+GET /owner 200 8.385 ms 557 {} - 557 - node-superagent/3.8.3
+GET /owner 200 11.881 ms 557 {} - 557 - node-superagent/3.8.3
+GET /pets 500 3.345 ms 114 {} - 114 - node-superagent/3.8.3
+GET /owner 200 11.196 ms 557 {} - 557 - node-superagent/3.8.3
+GET /owner 200 12.960 ms 557 {} - 557 - node-superagent/3.8.3
+POST /pets 200 54.927 ms 17 {"id":"1","name":"testPet","color":"red","breed":"lab","age":"12","type":"dog","ownedBy":"1"} 93 17 - node-superagent/3.8.3
+GET /owner 200 12.686 ms 557 {} - 557 - node-superagent/3.8.3
+GET /pets 500 2.361 ms 114 {} - 114 - node-superagent/3.8.3
+POST /pets 200 37.667 ms 17 {"id":"1","name":"testPet","color":"red","breed":"lab","age":"12","type":"dog","ownedBy":"1"} 93 17 - node-superagent/3.8.3
+POST /pets 422 37.206 ms 33 {"id":"7im9m921kpk6","name":"abcd","age":"1","breed":"abcd","type":"qqqq","color":"aa"} 87 33 - PostmanRuntime/7.17.1
+POST /pets 422 1.665 ms 33 {"id":"7im9m921kpk6","name":"abcd","age":"1","breed":"abcd","type":"cats","color":"aa"} 87 33 - PostmanRuntime/7.17.1
+POST /pets 422 1.017 ms 33 {"id":"7im9m921kpk6","name":"abcd","age":"1","breed":"abcd","type":"DOG","color":"aa"} 86 33 - PostmanRuntime/7.17.1
+POST /pets 422 0.895 ms 33 {"id":"7im9m921kpk6","name":"abcd","age":"1","breed":"abcd","type":"qqwqw","color":"aa","ownedBy":"1"} 102 33 - PostmanRuntime/7.17.1
+POST /pets 200 9.373 ms 17 {"id":"7im9m921kpk6","name":"abcd","age":"1","breed":"abcd","type":"cat","color":"aa","ownedBy":"1"} 100 17 - PostmanRuntime/7.17.1
+POST /pets 200 56.690 ms 17 {"id":"7im9m921kpk6","name":"abcd","age":"1","breed":"abcd","type":"CAT","color":"aa","ownedBy":"1"} 100 17 - PostmanRuntime/7.17.1
+POST /pets 422 84.446 ms 33 {"id":"7im9m921kpk6","name":"abcd","age":"1","breed":"abcd","type":"CATs","color":"aa","ownedBy":"1"} 101 33 - PostmanRuntime/7.17.1
+POST /pets 200 15.199 ms 17 {"id":"7im9m921kpk6","name":"abcd","age":"1","breed":"abcd","type":"CAt","color":"aa","ownedBy":"1"} 100 17 - PostmanRuntime/7.17.1
+GET /owner 200 13.091 ms 557 {} - 557 - node-superagent/3.8.3
+GET /pets 500 5.265 ms 114 {} - 114 - node-superagent/3.8.3
+POST /pets 200 41.641 ms 17 {"name":"testPet","color":"red","breed":"lab","age":"12","type":"dog","ownedBy":"1"} 84 17 - node-superagent/3.8.3
+GET /owner 200 15.823 ms 557 {} - 557 - node-superagent/3.8.3
+GET /pets 500 4.117 ms 114 {} - 114 - node-superagent/3.8.3
+POST /pets 200 32.550 ms 17 {"name":"testPet","color":"red","breed":"lab","age":"12","type":"dog","ownedBy":"1"} 84 17 - node-superagent/3.8.3
+GET /owner 200 13.505 ms 557 {} - 557 - node-superagent/3.8.3
+GET /pets 500 2.665 ms 114 {} - 114 - node-superagent/3.8.3
+POST /pets 200 36.503 ms 17 {"name":"testPet","color":"red","breed":"lab","age":"12","type":"dog","ownedBy":"1"} 84 17 - node-superagent/3.8.3
+POST /pets 422 0.982 ms 33 {"color":"red","breed":"lab","age":"12","type":"dog","ownedBy":"1"} 67 33 - node-superagent/3.8.3
+GET /owner 200 12.883 ms 557 {} - 557 - node-superagent/3.8.3
+GET /pets 500 3.682 ms 114 {} - 114 - node-superagent/3.8.3
+POST /pets 200 29.819 ms 17 {"name":"testPet","color":"red","breed":"lab","age":"12","type":"dog","ownedBy":"1"} 84 17 - node-superagent/3.8.3
+POST /pets 422 0.984 ms 33 {"color":"red","breed":"lab","age":"12","type":"dog","ownedBy":"1"} 67 33 - node-superagent/3.8.3
+POST /pets 422 0.747 ms 33 {"name":"test1","breed":"lab","age":"12","type":"dog","ownedBy":"1"} 68 33 - node-superagent/3.8.3
+POST /pets 422 0.500 ms 33 {"name":"test1","color":"red","breed":"lab","type":"dog","ownedBy":"1"} 71 33 - node-superagent/3.8.3
+POST /pets 422 0.515 ms 33 {"name":"test1","color":"red","age":"12","type":"dog","ownedBy":"1"} 68 33 - node-superagent/3.8.3
+POST /pets 422 0.724 ms 33 {"name":"test1","breed":"lab","age":"12","color":"red","ownedBy":"1"} 69 33 - node-superagent/3.8.3
+POST /pets 422 0.754 ms 33 {"name":"test1","breed":"lab","age":"12","type":"dog","color":"red"} 68 33 - node-superagent/3.8.3
+GET /owner 200 10.264 ms 557 {} - 557 - node-superagent/3.8.3
+GET /pets 500 3.678 ms 114 {} - 114 - node-superagent/3.8.3
+POST /pets 200 37.659 ms 17 {"name":"testPet","color":"red","breed":"lab","age":"12","type":"dog","ownedBy":"1"} 84 17 - node-superagent/3.8.3
+POST /pets 422 0.990 ms 33 {"color":"red","breed":"lab","age":"12","type":"dog","ownedBy":"1"} 67 33 - node-superagent/3.8.3
+POST /pets 422 0.508 ms 33 {"name":"test1","breed":"lab","age":"12","type":"dog","ownedBy":"1"} 68 33 - node-superagent/3.8.3
+POST /pets 422 0.487 ms 33 {"name":"test1","color":"red","breed":"lab","type":"dog","ownedBy":"1"} 71 33 - node-superagent/3.8.3
+POST /pets 422 0.503 ms 33 {"name":"test1","color":"red","age":"12","type":"dog","ownedBy":"1"} 68 33 - node-superagent/3.8.3
+POST /pets 422 0.485 ms 33 {"name":"test1","breed":"lab","age":"12","color":"red","ownedBy":"1"} 69 33 - node-superagent/3.8.3
+POST /pets 422 0.553 ms 33 {"name":"test1","breed":"lab","color":"red","age":"12","type":"do","ownedBy":"1"} 81 33 - node-superagent/3.8.3
+POST /pets 422 0.633 ms 33 {"name":"test1","breed":"lab","age":"12","type":"dog","color":"red"} 68 33 - node-superagent/3.8.3
+GET /owner 200 11.656 ms 557 {} - 557 - node-superagent/3.8.3
+GET /pets 500 3.931 ms 114 {} - 114 - node-superagent/3.8.3
+POST /pets 200 32.355 ms 17 {"name":"testPet","color":"red","breed":"lab","age":"12","type":"dog","ownedBy":"1"} 84 17 - node-superagent/3.8.3
+POST /pets 422 0.767 ms 33 {"color":"red","breed":"lab","age":"12","type":"dog","ownedBy":"1"} 67 33 - node-superagent/3.8.3
+POST /pets 422 0.671 ms 33 {"name":"test1","breed":"lab","age":"12","type":"dog","ownedBy":"1"} 68 33 - node-superagent/3.8.3
+POST /pets 422 0.758 ms 33 {"name":"test1","color":"red","breed":"lab","type":"dog","ownedBy":"1"} 71 33 - node-superagent/3.8.3
+POST /pets 422 0.696 ms 33 {"name":"test1","color":"red","age":"12","type":"dog","ownedBy":"1"} 68 33 - node-superagent/3.8.3
+POST /pets 422 0.509 ms 33 {"name":"test1","breed":"lab","age":"12","color":"red","ownedBy":"1"} 69 33 - node-superagent/3.8.3
+POST /pets 422 0.510 ms 33 {"name":"test1","breed":"lab","color":"red","age":"12","type":"do","ownedBy":"1"} 81 33 - node-superagent/3.8.3
+POST /pets 422 0.517 ms 33 {"name":"test1","breed":"lab","age":"12","type":"dog","color":"red"} 68 33 - node-superagent/3.8.3
+GET /owner 200 9.590 ms 557 {} - 557 - node-superagent/3.8.3
+GET /pets 500 3.587 ms 114 {} - 114 - node-superagent/3.8.3
+POST /pets 200 30.093 ms 17 {"name":"testPet","color":"red","breed":"lab","age":"12","type":"dog","ownedBy":"1"} 84 17 - node-superagent/3.8.3
+POST /pets 422 0.948 ms 33 {"color":"red","breed":"lab","age":"12","type":"dog","ownedBy":"1"} 67 33 - node-superagent/3.8.3
+POST /pets 422 0.512 ms 33 {"name":"test1","breed":"lab","age":"12","type":"dog","ownedBy":"1"} 68 33 - node-superagent/3.8.3
+POST /pets 422 0.655 ms 33 {"name":"test1","color":"red","breed":"lab","type":"dog","ownedBy":"1"} 71 33 - node-superagent/3.8.3
+POST /pets 422 0.557 ms 33 {"name":"test1","color":"red","age":"12","type":"dog","ownedBy":"1"} 68 33 - node-superagent/3.8.3
+POST /pets 422 0.621 ms 33 {"name":"test1","breed":"lab","age":"12","color":"red","ownedBy":"1"} 69 33 - node-superagent/3.8.3
+POST /pets 422 0.686 ms 33 {"name":"test1","breed":"lab","color":"red","age":"12","type":"qq","ownedBy":"1"} 81 33 - node-superagent/3.8.3
+POST /pets 422 1.979 ms 33 {"name":"test1","breed":"lab","age":"12","type":"dog","color":"red"} 68 33 - node-superagent/3.8.3
+PUT /pets 404 1.867 ms 143 {"id":"7im9m921kpk6","name":"abcd","age":"1","breed":"abcd","type":"CAt","color":"aa","ownedBy":"1"} 100 143 - PostmanRuntime/7.17.1
+PUT /pets/7im9m921kpk6 200 53.108 ms 17 {"id":"7im9m921kpk6","name":"abcd","age":"1","breed":"abcd","type":"CAt","color":"aa","ownedBy":"1"} 100 17 - PostmanRuntime/7.17.1
+PUT /pets/7im9m921kpk6 200 69.097 ms 17 {"id":"7im9m921kpk6","name":"abcd","age":"1","breed":"abcd","type":"CAt","color":"aa","ownedBy":"1"} 100 17 - PostmanRuntime/7.17.1
+PUT /pets/7im9m921kpk6 422 44.507 ms 40 {"id":"7im9m921kpk6","name":"abcd","age":"1","breed":"abcd","type":"CAt","color":"aa","ownedBy":"1"} 100 40 - PostmanRuntime/7.17.1
+PUT /pets/7im9m921kpk6 422 2.381 ms 33 {"id":"7im9m921kpk6","name":"abcd","age":"1","breed":"abcd","type":"CAt","color":"aa"} 86 33 - PostmanRuntime/7.17.1
+PUT /pets/7e9a0i1eb7p 200 62.416 ms 17 {"id":"7im9m921kpk6","name":"abcd","age":"1","breed":"abcd","type":"CAt","color":"aa","ownedBy":"1"} 100 17 - PostmanRuntime/7.17.1

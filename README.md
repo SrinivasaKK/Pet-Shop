@@ -9,6 +9,15 @@
 - pm2 start index.js
 - Server runs on PORT provided by env variable if present or 4000
 
+## Running unit tests
+
+- npm test
+  used mocha and chai to test the application
+
+## Linting
+
+- used JSHint liting tool for linting the application.
+
 ## Paths:
 
 - GET “/owner” lists all the owners. (Reading from json file (owners.json) - already present in server)
@@ -16,11 +25,6 @@
 - GET “/owner/id” - lists all the pets belongs to that corresponding owner
 - POST "/pets" - post the pet data to pets.json file.
 - PUT "/pets/id" - updates the pet with the corresponding pet id.
-
-## Running unit tests
-
-- npm test
-  used mocha and chai to test the application
 
 ## Test cases written:
 

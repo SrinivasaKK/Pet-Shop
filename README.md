@@ -11,12 +11,14 @@
 
 ## Running unit tests
 
-- npm test
-  used mocha and chai to test the application
+- Run the command - npm test
+
+- used mocha framework and chai assertion library to test the application
 
 ## Linting
 
-- used JSHint liting tool for linting the application.
+- Used JSHint liting tool for linting the application.
+- jshint --verbose fileName.js
 
 ## Paths:
 
@@ -52,4 +54,4 @@
 
 9. /GET/:id owner - it should not GET a pet by the given owner id (negative case)
 
--- total 27 test cases are written
+   (total 27 test cases are written)

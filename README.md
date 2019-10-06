@@ -84,8 +84,8 @@
   - has test.js file. used for unit testing of the application.
 - not-important directory
 
-  - It is not common practice to include .env file and .jshintrc files when the project is pushed to git.
+  - It is not common practice to include .env file when the project is pushed to git.
     Since this is an assignment, to demonstrate my approach, I have included adirectory called not-important which has
 
     - Logs directory which has some logs of my previous testing.
-    - .env and .jshintrc file
+    - .env

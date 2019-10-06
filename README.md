@@ -7,7 +7,7 @@
 - cd Ad-Form-assignment
 - npm install
 - pm2 start index.js
-- Server runs on PORT provided by env variable if present or 4000
+- Server runs on PORT provided by env variable if present or 443
 
 ## Running unit tests
 
@@ -26,14 +26,6 @@
 - log directory is created when the server is started for the first time.
 - each request is logged.
 - logs are rotated on a daily basis.
-
-## Paths
-
-- GET “/owner” lists all the owners. (Reading from json file (owners.json) - already present in server)
-- GET “/pets” lists all the pets present (Reads from pets.json file. pets.json file is created when an owner creates new pet)
-- GET “/owner/id” - lists all the pets belongs to that corresponding owner
-- POST "/pets" - post the pet data to pets.json file.
-- PUT "/pets/id" - updates the pet with the corresponding pet id.
 
 ## Test cases written
 
@@ -63,7 +55,15 @@
 
    (total 27 test cases are written)
 
-## Project Structure and approach
+## Paths
+
+- GET “/owner” lists all the owners. (Reading from json file (owners.json) - already present in server)
+- GET “/pets” lists all the pets present (Reads from pets.json file. pets.json file is created when an owner creates new pet)
+- GET “/owner/id” - lists all the pets belongs to that corresponding owner
+- POST "/pets" - post the pet data to pets.json file.
+- PUT "/pets/id" - updates the pet with the corresponding pet id.
+
+## Project Structure
 
 - index.js is the entry point of the application
 - config.js file has required configurations
@@ -82,3 +82,9 @@
   - has owner and pets route
 - test directory
   - has test.js file. used for unit testing of the application.
+
+It is not common practice to include .env file and .jshintrc files when the project is pushed to git.
+Since this is an assignment, to demonstrate my approach, I have included adirectory called not-important which has -
+
+- Logs directory which has some logs of my previous testing.
+- .env and .jshintrc file

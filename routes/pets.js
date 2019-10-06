@@ -128,7 +128,7 @@ petsRouter.put("/:id", (req, res) => {
             return false;
           }
         });
-        // write the updated data to the file only if the pet with send id is present
+        // write the updated data to the file only if the pet with sent id is present
         updated[0] == true
           ? writeDataToFile(res, file, _helper.jsonToString(pet)) // jshint ignore:line
           : res.status(422).send({ msg: "Pet with the ID is not present" }); // jshint ignore:line

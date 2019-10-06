@@ -1,0 +1,14 @@
+GET / 200 12.459 ms 832 {} - 832 - Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET /polyfills-es2015.d3e61f0dd2b58e518eca.js 304 2.179 ms - {} - - http://localhost:443/ Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET /runtime-es2015.b948044840398824f16e.js 304 7.437 ms - {} - - http://localhost:443/ Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET /styles.eaffcc3bc6eb2896ab03.css 200 25.856 ms 145802 {} - 145802 http://localhost:443/ Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET /main-es2015.d579277dfa35a9510e36.js 200 18.425 ms 467167 {} - 467167 http://localhost:443/ Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET /dog.4b8a2581118de5763b36.jpg 200 9.682 ms 19053 {} - 19053 http://localhost:443/ Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET /cat.b72718f1d063189e547f.jpg 200 15.492 ms 16285 {} - 16285 http://localhost:443/ Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET / 304 0.646 ms - {} - - - Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET /styles.eaffcc3bc6eb2896ab03.css 304 0.522 ms - {} - - http://localhost:443/ Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET /polyfills-es2015.d3e61f0dd2b58e518eca.js 304 2.018 ms - {} - - http://localhost:443/ Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET /runtime-es2015.b948044840398824f16e.js 304 31.356 ms - {} - - http://localhost:443/ Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET /main-es2015.d579277dfa35a9510e36.js 304 45.027 ms - {} - - http://localhost:443/ Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET /dog.4b8a2581118de5763b36.jpg 304 0.539 ms - {} - - http://localhost:443/ Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+GET /favicon.ico 200 5.512 ms 948 {} - 948 http://localhost:443/ Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36

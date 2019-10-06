@@ -99,6 +99,7 @@ petsRouter.post("/", (req, res) => {
 */
 petsRouter.put("/:id", (req, res) => {
   let id = req.params.id;
+  console.log(id);
   let petData = req.body;
   //check if all fields are present
   if (
@@ -116,22 +117,19 @@ petsRouter.put("/:id", (req, res) => {
       .read(file)
       .then(response => {
         pet = _helper.stringToJson(response);
-        const updated = pet.pets.map(updatingPet => {
+        pet.pets.map(updatingPet => {
           if (updatingPet.id === id) {
+            console.log(updatingPet.id);
             updatingPet.name = petData.name;
             updatingPet.age = petData.age;
             updatingPet.color = petData.color;
             updatingPet.type = petData.type;
             updatingPet.breed = petData.breed;
-            return true;
-          } else {
-            return false;
           }
         });
         // write the updated data to the file only if the pet with sent id is present
-        updated[0] == true
-          ? writeDataToFile(res, file, _helper.jsonToString(pet)) // jshint ignore:line
-          : res.status(422).send({ msg: "Pet with the ID is not present" }); // jshint ignore:line
+
+        writeDataToFile(res, file, _helper.jsonToString(pet)); // jshint ignore:line
       })
       .catch(err => {
         res.status(500).send({ msg: "unable to update" });

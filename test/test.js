@@ -54,8 +54,8 @@ describe("Pets", () => {
 });
 
 /* POST the data to test positive test case of get /pets 
+  Test data has owner id as 0 to avoid confusion between test data and data from front end
 
-*owner id starts from 1 in owner.json file. Here I have used 0 as owner id so that it does not interfere with Front end application
 */
 //POST route of pets
 

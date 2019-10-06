@@ -20,7 +20,7 @@
 - Used JSHint liting tool for linting the application.
 - jshint --verbose fileName.js
 
-## Paths:
+## Paths
 
 - GET “/owner” lists all the owners. (Reading from json file (owners.json) - already present in server)
 - GET “/pets” lists all the pets present (Reads from pets.json file. pets.json file is created when an owner creates new pet)
@@ -28,7 +28,7 @@
 - POST "/pets" - post the pet data to pets.json file.
 - PUT "/pets/id" - updates the pet with the corresponding pet id.
 
-## Test cases written:
+## Test cases written
 
 1. /GET owners - to test the listing of owners
 2. /GET pets - When pets.json file is not present (negative test case)
@@ -55,3 +55,12 @@
 9. /GET/:id owner - it should not GET a pet by the given owner id (negative case)
 
    (total 27 test cases are written)
+
+## Project Structure and approach
+
+- #dist# directory
+  - This directory has the files generated after compiling the fron end angular application created for this project. I have not inclued the complete angular application here.
+  - The angular application can be found in the link -
+- #data# directory
+  - has owner.json file which holds all the details about owners
+  - once user post the pet data, pets.json file is created in the directory

@@ -1,30 +1,72 @@
 [
   {
-    "id": "1",
-    "name": "Owner-1",
-    "address": "KL downtown",
-    "phone": "1111111111",
-    "email": "abc@xyz.com"
+    "id": 1,
+    "name": "Kareem Cheel",
+    "email": "kcheel0@cbslocal.com",
+    "address": "64 Meadow Vale Circle",
+    "phone": "468 468 6687"
   },
   {
-    "id": "2",
-    "name": "Owner-2",
-    "address": "KL downtown",
-    "phone": "1111111111",
-    "email": "abc@xyz.com"
+    "id": 2,
+    "name": "Amalea Schistl",
+    "email": "aschistl1@123-reg.co.uk",
+    "address": "1585 Londonderry Pass",
+    "phone": "832 969 4539"
   },
   {
-    "id": "3",
-    "name": "Owner-3",
-    "address": "KL downtown",
-    "phone": "1111111111",
-    "email": "abc@xyz.com"
+    "id": 3,
+    "name": "Nancee Rushbury",
+    "email": "nrushbury2@virginia.edu",
+    "address": "9104 Maryland Junction",
+    "phone": "730 574 4620"
   },
   {
-    "id": "4",
-    "name": "Owner-3",
-    "address": "KL downtown",
-    "phone": "1111111111",
-    "email": "abc@xyz.com"
+    "id": 4,
+    "name": "Parrnell Bonhan",
+    "email": "pbonhan3@eepurl.com",
+    "address": "92707 Loftsgordon Drive",
+    "phone": "720 122 2707"
+  },
+  {
+    "id": 5,
+    "name": "Witty Bahlmann",
+    "email": "wbahlmann4@cdbaby.com",
+    "address": "2 Fulton Alley",
+    "phone": "277 591 1995"
+  },
+  {
+    "id": 6,
+    "name": "Violante Eykel",
+    "email": "veykel5@symantec.com",
+    "address": "8234 Clove Parkway",
+    "phone": "114 691 1525"
+  },
+  {
+    "id": 7,
+    "name": "Kimmi Gowling",
+    "email": "kgowling6@wikipedia.org",
+    "address": "085 Anniversary Court",
+    "phone": "772 792 2510"
+  },
+  {
+    "id": 8,
+    "name": "Evelin Krystek",
+    "email": "ekrystek7@unesco.org",
+    "address": "7793 Starling Trail",
+    "phone": "690 852 8952"
+  },
+  {
+    "id": 9,
+    "name": "Merridie Goodbanne",
+    "email": "mgoodbanne8@xing.com",
+    "address": "9 Daystar Way",
+    "phone": "225 632 9527"
+  },
+  {
+    "id": 10,
+    "name": "Rosemarie Sheehan",
+    "email": "rsheehan9@istockphoto.com",
+    "address": "8509 Haas Parkway",
+    "phone": "924 792 1637"
   }
 ]

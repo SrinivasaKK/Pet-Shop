@@ -1,11 +1,10 @@
 const express = require("express");
 const petsRouter = express.Router();
 const _helper = require("./../lib/helpers");
-
-var pet = {
+const { petsFile } = require("./../config");
+let pet = {
   pets: []
 };
-let file = "pets.json";
 
 /*
 1. Check if the file is present
@@ -14,12 +13,12 @@ let file = "pets.json";
 */
 petsRouter.get("/", (req, res) => {
   _helper
-    .isFilePresent(file)
+    .isFilePresent(petsFile)
     .then(success => {
       _helper
-        .read(file)
+        .read(petsFile)
         .then(data => {
-          let parsedData = _helper.stringToJson(data);
+          const parsedData = _helper.stringToJson(data);
           res.status(200).send(parsedData.pets);
         })
         .catch(err => {
@@ -40,7 +39,7 @@ petsRouter.get("/", (req, res) => {
 */
 
 petsRouter.post("/", (req, res) => {
-  let petData = req.body;
+  const petData = req.body;
   //check if all fields are present
   if (
     petData.name &&
@@ -54,8 +53,8 @@ petsRouter.post("/", (req, res) => {
     petData.ownedBy
   ) {
     // create unique ID to identify each pet
-    let id = _helper.createRandomnID();
-    let newPet = {
+    const id = _helper.createRandomnID();
+    const newPet = {
       id: id,
       name: petData.name,
       color: petData.color,
@@ -65,23 +64,23 @@ petsRouter.post("/", (req, res) => {
       ownedBy: petData.ownedBy
     };
     _helper
-      .isFilePresent(file)
+      .isFilePresent(petsFile)
       .then(success => {
         _helper
-          .read(file)
+          .read(petsFile)
           .then(response => {
             pet = _helper.stringToJson(response);
             pet.pets.push(newPet);
-            writeDataToFile(res, file, _helper.jsonToString(pet));
+            writeDataToFile(res, petsFile, _helper.jsonToString(pet));
           })
           .catch(err => {
             pet.pets.push(newPet);
-            writeDataToFile(res, file, _helper.jsonToString(pet));
+            writeDataToFile(res, petsFile, _helper.jsonToString(pet));
           });
       })
       .catch(err => {
         pet.pets.push(newPet);
-        writeDataToFile(res, file, _helper.jsonToString(pet));
+        writeDataToFile(res, petsFile, _helper.jsonToString(pet));
       });
   }
   // if any of the fields are missing
@@ -98,9 +97,9 @@ petsRouter.post("/", (req, res) => {
 
 */
 petsRouter.put("/:id", (req, res) => {
-  let id = req.params.id;
-  console.log(id);
-  let petData = req.body;
+  const id = req.params.id;
+
+  const petData = req.body;
   //check if all fields are present
   if (
     petData.name &&
@@ -114,7 +113,7 @@ petsRouter.put("/:id", (req, res) => {
     petData.ownedBy
   ) {
     _helper
-      .read(file)
+      .read(petsFile)
       .then(response => {
         pet = _helper.stringToJson(response);
         pet.pets.map(updatingPet => {
@@ -129,7 +128,7 @@ petsRouter.put("/:id", (req, res) => {
         });
         // write the updated data to the file only if the pet with sent id is present
 
-        writeDataToFile(res, file, _helper.jsonToString(pet)); // jshint ignore:line
+        writeDataToFile(res, petsFile, _helper.jsonToString(pet)); // jshint ignore:line
       })
       .catch(err => {
         res.status(500).send({ msg: "unable to update" });

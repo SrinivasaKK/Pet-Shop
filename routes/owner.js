@@ -1,21 +1,20 @@
 const express = require("express");
 const ownerRouter = express.Router();
-const ownerData = require("./../data/owners.json");
 const _helper = require("./../lib/helpers");
+const { ownersFile, petsFile } = require("./../config");
 
-let petfile = "pets.json";
-let ownerFile = "owners.json";
 // read data from owners file
 ownerRouter.get("/", (req, res) => {
   _helper
-    .isFilePresent(ownerFile)
+    .isFilePresent(ownersFile)
     .then(success => {
       _helper
-        .read(ownerFile)
+        .read(ownersFile)
         .then(data => {
           res.status(200).send(data);
         })
         .catch(err => {
+          console.log(err);
           res.status(500).send({ msg: "No owner available" });
         });
     })
@@ -30,16 +29,16 @@ ownerRouter.get("/", (req, res) => {
 3. If file is not present, send an error response back 
 */
 ownerRouter.get("/:id", (req, res) => {
-  let id = req.params.id;
+  const id = req.params.id;
   _helper
-    .isFilePresent(petfile)
+    .isFilePresent(petsFile)
     .then(success => {
       _helper
-        .read(petfile)
+        .read(petsFile)
         .then(response => {
           if (response) {
-            let parsedData = _helper.stringToJson(response);
-            let ownerPets = parsedData.pets.filter(ownerPet => {
+            const parsedData = _helper.stringToJson(response);
+            const ownerPets = parsedData.pets.filter(ownerPet => {
               if (ownerPet.ownedBy === id) {
                 return ownerPet;
               }

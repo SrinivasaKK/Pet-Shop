@@ -4,7 +4,7 @@
 
 - git clone  
  https://github.com/SrinivasaKK/Pet-Shop.git
-- cd Ad-Form-assignment
+- cd Pet-Shop
 - npm install
 - pm2 start index.js
 - Server runs on PORT provided by env variable if present or 4000

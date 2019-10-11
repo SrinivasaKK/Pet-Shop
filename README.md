@@ -3,7 +3,7 @@
 ## Deployment steps
 
 - git clone  
-  https://github.com/SrinivasaKK/Ad-Form-assignment.git
+ https://github.com/SrinivasaKK/Pet-Shop.git
 - cd Ad-Form-assignment
 - npm install
 - pm2 start index.js

@@ -69,7 +69,7 @@
 - index.js is the entry point of the application
 - config.js file has required configurations
 - dist directory
-  - This directory has the files generated after compiling the fron end angular application created for this project. I have not inclued the complete angular application here - https://github.com/SrinivasaKK/Ad-Form-Client-app.git
+  - This directory has the files generated after compiling the fron end angular application created for this project. I have not inclued the complete angular application here - https://github.com/SrinivasaKK/Pet-Shop-Front-End.git
   - The angular application can be found in the link -
 - data directory
   - has owner.json file which holds all the details about owners
